@@ -38,7 +38,7 @@ You can change the channel or frequency the interface is scanning on by issuing 
 
 ```bash
 iw dev <devname> set channel <channel>
-iw dev <devnmae> set freq <freq>
+iw dev <devname> set freq <freq>
 ```
 
 For example:
@@ -75,7 +75,7 @@ The `airmon-ng` script can automate the whole process:
 
 ```bash
 airmon-ng check kill wlan0
-airmon-ng start wlna0
+airmon-ng start wlan0
 wireshark
 ```
 
