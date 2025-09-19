@@ -48,7 +48,7 @@ iw dev mon0 set channel 161
 iw dev mon0 set freq 2442
 ```
 
-Note: only issue one or the other (freq or channel).
+Note: only issue one or the other (freq or channel). For a list of WLAN channels, see [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_WLAN_channels)
 
 ## Start Wireshark
 
@@ -85,3 +85,16 @@ And then to undo it all:
 airmon-ng stop wlan0mon0
 systemctl start NetworkManager wpa_supplicant.service
 ```
+
+---
+
+## Additional Resources
+
+* [Capturing Wireless LAN Packets in Monitor Mode with iw](https://sandilands.info/sgordon/capturing-wifi-in-monitor-mode-with-iw)
+* [Tcpdump: Write to a File for Network Analysis](https://www.howtouselinux.com/post/how-to-use-tcpdump-to-write-to-a-file-for-network-analysis)
+* [mac80211 Multiple Virtual Interface (vif) Support](https://wireless.docs.kernel.org/en/latest/en/users/documentation/iw/vif.html#monitor)
+* [`iwconfig(8)` - Linux man page](https://linux.die.net/man/8/iwconfig)
+* [Wi-Fi sniffing with Wireshark](https://emlogic.no/2024/01/wi-fi-sniffing-with-wireshark/)
+* [How to Capture Wi-Fi Traffic Using Wireshark](https://thelinuxcode.com/capture_wi-fi_traffic_using_wireshark/)
+* [List of WLAN channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels)
+* [How Do You Capture Wi-fi Traffic with Wireshark?](https://www.cyberly.org/en/how-do-you-capture-wi-fi-traffic-with-wireshark/index.html)
